@@ -47,7 +47,8 @@ blocks:
             - SEMAPHORE_BUILD_NUMBER=$SEMAPHORE_PIPELINE_ID SEMAPHORE_THREAD_COUNT=3 yarn test
       secrets:
         - name: Percy token
-        - name: KnapsackPro token
+        - name: 'GH_TOKEN '
+        - name: KNAPSACK_PRO_TEST_SUITE_TOKEN_CYPRESS
     dependencies:
       - Eslint Cypress
   - name: Eslint
